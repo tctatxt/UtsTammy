@@ -25,7 +25,7 @@ class DetailSeeder extends Seeder
             'video'=>'https://youtu.be/D7HjHW8cA_A',
             'image'=>$faker->imageUrl(640, 480, 'animals', true),
             'duration'=>$i,
-            'category_id'=>($i < 5 ? 1 : $i>5 && $i < 10 )? 2 : 3
+            'category_id'=>($i < 5)? 1 : (($i>5 && $i < 10 )? 2 : 3)
 
         ]);
 
