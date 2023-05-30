@@ -1,7 +1,7 @@
 @extends('layout.master')
 @section('title', 'detail')
 @section('content')
-    <div class="px-3 my-2">
+    <div class="px-12 my-2 flex justify-center flex-col">
         <p class="text-sm my-2">It Really Counts</p>
         <h1 class="text-6xl mb-2">{{ $post->title }}</h1>
         <p class="text-2xl">{{ $post->description }}</p>

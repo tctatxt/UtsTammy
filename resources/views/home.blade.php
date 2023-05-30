@@ -1,7 +1,7 @@
 @extends('layout.master')
 @section('title', 'home')
 @section('content')
-    <div class="mx-3 my-3">
+    <div class=" px-12 my-2 flex justify-center flex-col">
         <a href="/detail/{{ $higlight->id }}" class="flex flex-row border-2 border-black mt-6">
             <img class="w-1/4" src="{{ $higlight->detail->image }}" alt="">
             <div class="flex flex-col mx-3">
@@ -24,8 +24,8 @@
                 @endforeach
             </div>
         </div>
-        <h1 class="text-2xl m-2">Book Series Revies</h1>
-        <div class="flex flex-row grid grid-cols-3">
+        <h1 class="text-2xl m-2">Book Series Reviews</h1>
+        <div class="flex flex-row grid grid-cols-3 gap-3">
             @foreach ($posts as $post)
                 <div class="max-w-sm rounded overflow-hidden shadow-lg mb-3 pb-6">
                     <img class="w-full" src="{{ $post->detail->image }}" alt="">
