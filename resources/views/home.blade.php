@@ -27,7 +27,7 @@
         <h1 class="text-2xl m-2">Book Series Revies</h1>
         <div class="flex flex-row grid grid-cols-3">
             @foreach ($posts as $post)
-                <div class="max-w-sm rounded overflow-hidden shadow-lg mb-3">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg mb-3 pb-6">
                     <img class="w-full" src="{{ $post->detail->image }}" alt="">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">{{ $post->title }}</div>
